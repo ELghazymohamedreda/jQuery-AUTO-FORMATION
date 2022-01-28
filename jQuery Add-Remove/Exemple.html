@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">click pour ajoute</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+jQuery(document).ready(function(){
+
+jQuery('#btn').click(function(){
+
+    // creat element in html methode 1
+    var text = '<p>hello word</p>'
+
+
+        // creat element in html methode 2
+    var Text2 = document.createElement("p")
+
+    Text2.innerHTML=("hello")
+
+
+    // afficher
+jQuery("body").append(Text2,text)
+
+})
+
+
+})
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
